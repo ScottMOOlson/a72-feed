@@ -12,3 +12,4 @@ meetings = json.select { |m| m['district_id'] == district_id
                .map { |m| A72Feed.google_meeting_to_tsml(m) }
 
 puts JSON.pretty_generate(meetings)
+exit 0
