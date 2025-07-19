@@ -13,7 +13,7 @@ jobs:
       - name: Update feed
         env:
           A72_URL: ${{ secrets.A72_URL }}
-        run: mkdir output && ruby main.rb > output/district_10.json
+        run: mkdir output && ruby main.rb > output/district_16.json
       - name: Deploy feed
         uses: s0/git-publish-subdir-action@61eb9e6420447e7cbf010f7cce37103665c46bfa # develop as of 2024-10-13
         env:
