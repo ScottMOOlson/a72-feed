@@ -10,13 +10,13 @@ module A72Feed
       formatted_address: m['formatted_address'],
       district: m['district'],
       district_id: m['district_id'],
-      types: m['types'],  # This might be an array of TSML format codes like ["O", "D"]
-      region: m['region'],  # Optional but useful if present
-      group: m['group'],    # Group name, if available
-      slug: m['slug'],      # Unique meeting identifier
+      types: m['types'],
+      region: m['region'],
+      group: m['group'],
+      slug: m['slug'],
       latitude: m['latitude'],
       longitude: m['longitude']
-    }.compact  # Removes nil values to keep JSON clean
+    }.compact
   end
 end
 
